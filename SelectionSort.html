@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Selection Sort Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<nav class="navbar bg-success mb-5" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Algo Vis</a>
+        <button type="button" class="btn btn-warning text-black" id="generatearray">Generate New Array</button>
+        <button type="button" class="btn btn-danger text-black" id="sortArray">Sort the Array</button>
+        <div class="speed-control">
+            <input type="range" min="1" max="100" value="50" class="slider" id="speedSlider"
+                oninput="this.nextElementSibling.value = this.value">
+            <output class="badge text-bg-warning text-black text-wrap fw-bolder"></output>
+            <span class="text-white">Toggle Speed of Sorting</span>
+        </div>
+        <div class="size-control">
+            <input type="range" min="5" max="100" value="50" class="slider" id="sizeSlider"
+                oninput="this.nextElementSibling.value = this.value">
+            <output class="text-black badge text-bg-warning text-wrap fw-bolder"></output>
+            <span class="text-white">Toggle Size of Array</span>
+        </div>
+    </div>
+</nav>
+
+<body class="bg-success-subtle">
+    <h1 class="text-center fw-semibold text-danger-emphasis">Selection Sort Visualization</h1>
+    <div class="container">
+        <div class="array-container"></div>
+    </div>
+    <div class="row">
+        <div class="card mt-5 bg-dark-subtle">
+            <div class="card-header bg-dark text-white">
+                Insights
+            </div>
+            <div class="card-body bg-dark.bg-gradient">
+                <p class="card-text">
+                    Selection Sort is a simple sorting algorithm that repeatedly finds the minimum element from the
+                    unsorted part and moves it to the end of the sorted part.
+                </p>
+                <ul class="list-group list-group-flush rounded">
+                    <li class="list-group-item bg-dark text-white "><strong>Best-case time complexity:</strong> O(n²)
+                    </li>
+                    <li class="list-group-item bg-dark text-white"><strong>Average-case time complexity:</strong> O(n²)
+                    </li>
+                    <li class="list-group-item bg-dark text-white"><strong>Worst-case time complexity:</strong> O(n²)
+                    </li>
+                    <li class="list-group-item bg-dark text-white"><strong>Space Complexity:</strong> O(1)</li>
+                    <li class="list-group-item bg-dark text-white"><strong>Best For:</strong> Small datasets and
+                        scenarios where memory writes are costly</li>
+                    <li class="list-group-item bg-dark text-white"><strong>Not Suitable For:</strong> Large datasets due
+                        to poor performance</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/selectionsort.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling the array container */
+.array-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 75vh;
+  width: 98%;
+  background-color: rgb(37, 37, 37); /* Black background */
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Styling each bar in the array */
+.array-bar {
+  display: inline-block;
+  margin: 2px;
+  background-color: cyan; /* Light purple */
+  text-align: center;
+  color: white;
+  transition: height 0.2s ease;
+}
+
+.array-bar:hover {
+  background-color: rgb(93, 85, 211); /* Darker purple on hover */
+}
